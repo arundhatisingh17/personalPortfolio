@@ -1,0 +1,86 @@
+.ai_container {
+    position: fixed; /* Keeps the container fixed relative to the viewport */
+    bottom: 10px;    /* Distance from the bottom of the viewport */
+    right: 10px;     /* Distance from the right of the viewport */
+    z-index: 1000;   /* Ensures it stays above other content */
+}
+
+.ai_image {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures content stays inside the container */
+}
+
+.ai_image img {
+    width: 100%; /* Ensures the image stretches to fit the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the container */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.ai_image:hover {
+    transform: scale(1.1); /* Scales up the image on hover */
+}
+
+.ai_image:active {
+    transform: scale(0.9); /* Scales down the image when clicked */
+}
+
+
+.PopUp {
+    position: fixed;
+    bottom: 80px;  /* Popup will appear above the bot icon */
+    right: 20px;   /* Aligns the popup to the right */
+    width: 300px;  /* You can adjust the width of the popup */
+    background-color: white;  /* Popup background */
+    border-radius: 10px;  /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Adds shadow to make it stand out */
+    z-index: 1001;  /* Ensures the popup stays above other content */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content of the Popup */
+.PopUpContent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chatbox UI Styling */
+.chatbox {
+    margin-top: 10px;
+}
+
+.chatMessages {
+    max-height: 200px;
+    overflow-y: auto;  /* Allows scrolling for long messages */
+    margin-bottom: 10px;
+}
+
+.inputMessage {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;  /* Light border */
+}
+
+.sendButton {
+    background-color: #ff4081;  /* Customize button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for Close Button */
+.btn-close {
+    background: transparent;
+    border: none;
+    color: #ff4081;  /* Customize close button color */
+    font-size: 20px;
+    align-self: flex-end;  /* Position it in the top-right corner */
+}

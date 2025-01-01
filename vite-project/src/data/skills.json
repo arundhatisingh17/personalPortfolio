@@ -1,0 +1,16 @@
+[
+    {"title": "HTML", "imageSrc": "skills/html.png"},
+
+    {"title": "CSS", "imageSrc": "skills/css.png"},
+
+    {"title": "JavaScript", "imageSrc": "skills/javascript.png"},
+
+    {"title": "Git", "imageSrc": "skills/git.png"},
+
+    {"title": "NumPy", "imageSrc": "skills/numpy.png"},
+
+    {"title": "pandas", "imageSrc": "skills/pandas.png"},
+
+    {"title": "PyTorch", "imageSrc": "skills/pytorch.png"}
+  ]
+  

@@ -1,0 +1,115 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 61px;
+  z-index: 2;
+  margin: 0 10%;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: flex-end;
+  gap: 11px;
+  z-index: 3;
+}
+
+.menuBtn {
+  display: block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+}
+
+.menuItems {
+  display: none; /* Hide menu items by default */
+  flex-direction: column;
+  gap: 13px;
+  list-style: none;
+  align-items: center;
+  border-radius: 10px;
+  background: rgb(25, 55, 109);
+  background: linear-gradient(
+    0deg,
+    rgba(190, 141, 220, 0.2) 0%,
+    rgb(213, 139, 234) 100%
+  );
+  padding: 24px 33px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.menuItems.menuOpen {
+  display: flex; /* Show menu items when menuOpen class is added */
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    order: 1; /* Position the menuBtn at the top */
+    margin-right: 10px; /* Add margin to keep it within the screen */
+  }
+
+  .menuItems {
+    display: none; /* Hide menu items by default */
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    order: 2; /* Position the menuItems below the menuBtn */
+    border-radius: 10px;
+    background: rgb(220, 154, 219);
+    background: linear-gradient(
+      0deg,
+      rgba(193, 102, 226, 0.2) 0%,
+      rgb(235, 168, 230) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuItems.menuOpen {
+    display: flex; /* Show menu items when menuOpen class is added */
+  }
+}

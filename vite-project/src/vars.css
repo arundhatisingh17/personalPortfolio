@@ -1,0 +1,17 @@
+/* creating variables  */
+:root {
+    /* Colors */
+    --color-text: #fff;
+    --color-primary: #f1afc4;
+    --color-secondary: #eacbe9;
+    --color-dark: #f0d3ee;
+    --color-bg: #fae3f8;
+
+
+    /* fonts */
+    --font-robot: 'Roboto';
+}
+
+body {
+    cursor: crosshair;
+}

@@ -1,0 +1,90 @@
+[
+    {
+        "role": "Undergraduate Research Assistant",
+        "company": "FabLab, Morgridge Institute of Research",
+        "startDate": "September 1, 2023",
+        "location": "Madison, Wisconsin",
+        "description": [],
+        "logo": "history/morgridge.png"
+
+    },
+
+    {
+        "role": "Equity and Debt Analyst",
+        "company": "IDBI Asset Management Ltd.",
+        "startDate": "June 6, 2023",
+        "endDate": "July 6, 2023",
+        "location": "Mumbai, India",
+        "description": ["Developed a web scraping tool to extract financial data from websites, increasing the efficiency of building financial reports by almost 20%", "Worked under the guidance of the company secretary and other debt analysts to gain important insights into financial markets."],
+        "logo": "history/idbi.png"
+    },
+
+
+    {
+        "role": "AI Research Intern",
+        "company": "YRSK Marketing and Branding Solutions",
+        "startDate": "January 1, 2024",
+        "endDate": "February 20, 2024",
+        "location": "Mumbai, India",
+        "description": [
+            "Conducted research and experimentation to understand the capabilities of Mistral.ai for content generation",
+            "Collaborated with the development team to integrate Mistral.ai into company's content creation pipeline",
+            "Reduced content creation time by 30%",
+            "Customized and fine-tuned the AI models to generate high-quality and engaging content prompts tailored to our target audience"
+        ],
+        "logo": "history/YRSK.png"
+    },
+
+
+    {
+        "role": "Peer Mentor - Computer Sciences 320 {UW Madison}",
+        "company": "University of Wisconsin Madison, Department of Computer Sciences",
+        "startDate": "August 17, 2024",
+        "location": "Madison, Wisconsin",
+        "description": [
+            "Currently serving as a peer mentor for the Computer Sciences 320 course at the University of Wisconsin Madison"
+        ],
+        "logo": "history/uwlogo.png"
+    },
+
+    {
+        "role": "Peer Mentor - Statistics 371/240 {UW Madison}",
+        "company": "University of Wisconsin Madison, Statistics Learning Center",
+        "startDate": "January 22, 2024",
+        "endDate": "May 10, 2024",
+        "location": "Madison, Wisconsin",
+        "description": [
+            "Offered expert mentoring and tutoring in statistics within the classroom",
+            "Assisted students with their coursework and enhancing their comprehension of statistical concepts"
+        ],
+        "logo": "history/uwlogo.png"
+    },
+
+
+    {
+        "role": "Student Learning Technology Assistant - Wisconsin School of Business",
+        "company": "University of Wisconsin Madison, Wisconsin School of Business",
+        "startDate": "May 22, 2024",
+        "endDate": "September 5, 2024",
+        "location": "Madison, Wisconsin",
+        "description": [
+            "Assisted students with technology-related issues and provided guidance on using various software applications",
+            "Managed the school's computer lab and ensured that all systems were up-to-date and functioning properly"
+        ],
+        "logo": "history/uwlogo.png"
+    },
+
+
+    {
+        "role": "Peer Mentor - Math Learning Center",
+        "company": "University of Wisconsin Madison, Mathematics Learning Center",
+        "startDate": "September 2023",
+        "endDate": "December 2023",
+        "location": "Madison, Wisconsin",
+        "description": [ "Offered expert mentoring and tutoring in calculus within the classroom", 
+        "Assisted students with their coursework and enhancing their comprehension of mathematical concepts"],
+        "logo": "history/uwlogo.png"
+    }
+
+
+]

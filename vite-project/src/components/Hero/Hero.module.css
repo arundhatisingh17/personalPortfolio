@@ -1,0 +1,167 @@
+@import "../../vars.css";
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 100vh; 
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    z-index: 1;
+}
+
+
+.title{
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: var(--font-robot); /* roboto font */  
+    background: linear-gradient(to right, #7f7777f8, #d35cc524); /* Gradient colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.description{
+    font-size: 30px;
+    font-family: var(--font-robot);
+    margin-bottom: 30px;
+
+}
+
+.contactBtn{
+    display: block;
+    padding: 17px 26px;
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: var(--color-text);
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 100px;
+    transition: background 0.3s; 
+    box-shadow: 0 0 4px 0 rgba(221, 113, 233, 0.25);
+}
+
+
+.contactBtn:hover{
+    background: var(--color-secondary);
+}
+
+/* Responsive design */
+
+
+
+
+.topBlur{
+    position: absolute;
+    width: 15vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: -128px; /* Position the blur on top of the hero image */
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(227, 189, 222, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+
+.bottomBlur{
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: 240px; /* Position the blur on top of the hero image */
+    right: -25vw;
+    border-radius: 764px;
+    background: rgba(233, 199, 243, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.heroImg{
+    width : 24%;
+    height: 35%;
+    border-radius: 50%;
+    z-index: 1; 
+
+ 
+    /* adding animation */
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+ }
+
+ .socialIcons {
+    display: flex;
+    gap: 27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .socialIcons a {
+    color: #780876; /* Default dark pink color */
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+
+ .socialIcons a:hover {
+    color: #780876; /* LinkedIn color */
+  }
+  
+  .socialIcons a:nth-child(2):hover {
+    color: #780876; /* GitHub color */
+  }
+  
+  .socialIcons a:nth-child(3):hover {
+    color: #780876; /* Instagram color */
+  }
+ 
+ 
+   
+ @keyframes floating {
+     0% {
+         transform: translate(0,0px);
+     }
+     50% {
+         transform: translate(0, 10px);
+     }
+     100%{
+         transform: translate(0,-0px);
+     }
+ }
+ 
+
+@media screen and (max-width: 830px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .content{
+        align-items: center;
+    }
+}
+
+

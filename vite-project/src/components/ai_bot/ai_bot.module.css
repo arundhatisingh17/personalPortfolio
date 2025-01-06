@@ -68,7 +68,7 @@
 }
 
 .sendButton {
-    background-color: #ff4081;  /* Customize button color */
+    background-color: #121650;  /* Customize button color */
     color: white;
     padding: 10px;
     border: none;
@@ -80,7 +80,7 @@
 .btn-close {
     background: transparent;
     border: none;
-    color: #ff4081;  /* Customize close button color */
+    color: #0f0c32;  /* Customize close button color */
     font-size: 20px;
     align-self: flex-end;  /* Position it in the top-right corner */
 }

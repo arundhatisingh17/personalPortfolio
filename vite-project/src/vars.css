@@ -2,10 +2,10 @@
 :root {
     /* Colors */
     --color-text: #fff;
-    --color-primary: #f1afc4;
-    --color-secondary: #eacbe9;
-    --color-dark: #f0d3ee;
-    --color-bg: #fae3f8;
+    --color-primary: #030722;
+    --color-secondary: #221a52;
+    --color-dark: #060525;
+    --color-bg: #121343;
 
 
     /* fonts */
@@ -13,5 +13,5 @@
 }
 
 body {
-    cursor: crosshair;
+    cursor: default;
 }

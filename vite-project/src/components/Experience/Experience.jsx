@@ -17,13 +17,13 @@ export const Experience = () => {
     return companyLinks[company] || "";
   }
   return (
-    <section id = "experience" className= {styles.container}>
+    <section  className= {styles.container} id = "experience">
       <h2 className= {styles.heading}>Skills</h2>
         <div className={styles.mySkills}>
             {skills.map((skill, id) => {
               return <div key = {id}>
                 <div><img src = {getImageUrl(skill.imageSrc)} alt = {skill.title} /></div>
-                <p>{skill.title}</p>
+                <p className='skills'>{skill.title}</p>
               </div>
             })}</div>
         <div className={styles.historyContainer}>

@@ -1,115 +1,75 @@
-@import "../../vars.css";
-
+/* General navbar setup */
 .navbar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 61px;
-  z-index: 2;
-  margin: 0 10%;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--color-text);
-  flex-shrink: 0; /* Prevent shrinking */
-}
-
-.menu {
-  position: absolute;
-  right: 0;
+  position: fixed;
   top: 0;
-  margin-right: 10%;
+  width: 100%;
   display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  align-items: flex-end;
-  gap: 11px;
-  z-index: 3;
-}
-
-.menuBtn {
-  display: block;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  flex: 0 0 auto;
-}
-
-.menuItems {
-  display: none; /* Hide menu items by default */
-  flex-direction: column;
-  gap: 13px;
-  list-style: none;
   align-items: center;
-  border-radius: 10px;
-  background: rgb(25, 55, 109);
-  background: linear-gradient(
-    0deg,
-    rgba(190, 141, 220, 0.2) 0%,
-    rgb(213, 139, 234) 100%
-  );
-  padding: 24px 33px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  justify-content: center; /* Center the card horizontally */
+  z-index: 999; /* Ensure it stays on top */
+  background-color: transparent; /* Make the navbar background transparent */
 }
 
-.menuItems.menuOpen {
-  display: flex; /* Show menu items when menuOpen class is added */
+.fixed{
+  position: fixed; /* Fix the navbar to the viewport */
+  top: 0; /* Position it at the top of the page */
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  align-items: center;
+  background: transparent !important; /* Make the card background transparent */
+  padding: 10px 0; /* Add some padding for spacing */
 }
 
-.menuItems a {
-  font-size: 25px;
-  color: var(--color-text);
+a.nav-link {
+  color: #39ff14 !important; /* Fluorescent green for active link */
+  font-weight: bold; /* Make the active link stand out */
+  text-decoration: underline; /* Optional, to highlight the active link */
+}
+
+/* Center the links and set spacing */
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-around; /* Space links evenly */
+  width: 50%; /* Adjust as needed to control link spacing */
+}
+
+h10{
+  color: #39ff14
+}
+
+/* Navbar link styles */
+.navbar .nav-link {
+  color: #39ff14 !important; /* Force fluorescent green */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-@media screen and (max-width: 830px) {
+/* Hover effect for links */
+.navbar .nav-link:hover {
+  color: #00ff00 !important; /* Brighter green on hover */
+}
+
+/* For larger screens, ensure proper alignment */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* For smaller screens (mobile view) */
+@media (max-width: 767px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    padding: 10px;
   }
 
-  .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
-  }
-
-  .menuBtn {
-    display: block;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    flex: 0 0 auto;
-    order: 1; /* Position the menuBtn at the top */
-    margin-right: 10px; /* Add margin to keep it within the screen */
-  }
-
-  .menuItems {
-    display: none; /* Hide menu items by default */
-    flex-direction: column;
-    align-items: center;
-    gap: 13px;
-    order: 2; /* Position the menuItems below the menuBtn */
-    border-radius: 10px;
-    background: rgb(220, 154, 219);
-    background: linear-gradient(
-      0deg,
-      rgba(193, 102, 226, 0.2) 0%,
-      rgb(235, 168, 230) 100%
-    );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  .menuItems.menuOpen {
-    display: flex; /* Show menu items when menuOpen class is added */
+  .navbar .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    text-align: center; /* Center align the links */
   }
 }

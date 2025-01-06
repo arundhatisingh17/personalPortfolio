@@ -9,8 +9,13 @@ export const AboutMe = () => {
           About
         </h2>
         <div className={styles.content}>
-            <img src = {getImageUrl("about/aboutMe.jpg")} alt = "sitting on my laptop!" className = {styles.brightImage} />
-        <ul className = {styles.aboutItems}>
+
+
+
+
+          
+            {/* <img src = {getImageUrl("about/aboutMe.jpg")} alt = "sitting on my laptop!" className = {styles.brightImage} /> */}
+        {/* <ul className = {styles.aboutItems}>
           <li className = {styles.aboutItem}>
             <img src = {getImageUrl('about/cursorIcon.png')} alt="Cursor Icon"/>
             <div className={styles.aboutItemText}>
@@ -32,7 +37,7 @@ export const AboutMe = () => {
             <p>I have designed multiple landing pages and have created design systems as well.</p>
             </div>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

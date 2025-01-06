@@ -14,13 +14,16 @@
     min-height: 100vh; 
 }
 
+strong{
+    color: white;
+}
 
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: white;
+    color: rgb(212, 206, 206);
     z-index: 1;
 }
 
@@ -29,10 +32,10 @@
     font-size: 100px;
     font-weight: 900;
     margin-bottom: 30px;
-    color: var(--color-text);
+    color: rgb(47, 255, 0);
     text-decoration: none;
     font-family: var(--font-robot); /* roboto font */  
-    background: linear-gradient(to right, #7f7777f8, #d35cc524); /* Gradient colors */
+    background: linear-gradient(to right, rgb(47,255, 0), rgb(151, 237, 151)); /* Gradient colors */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -40,9 +43,10 @@
 
 
 .description{
-    font-size: 30px;
+    font-size: 17px;
     font-family: var(--font-robot);
     margin-bottom: 30px;
+    color: rgb(172, 167, 167)
 
 }
 
@@ -58,7 +62,7 @@
     margin-top: 30px;
     border-radius: 100px;
     transition: background 0.3s; 
-    box-shadow: 0 0 4px 0 rgba(221, 113, 233, 0.25);
+    box-shadow: 0 0 4px 0 rgba(97, 80, 189, 0.25);
 }
 
 
@@ -77,10 +81,10 @@
     height: 50vw;
     min-width: 350px;
     min-height: 350px;
-    top: -128px; /* Position the blur on top of the hero image */
+    top: 0px; /* Position the blur on top of the hero image */
     left: -10vw;
     border-radius: 764px;
-    background: rgba(227, 189, 222, 0.7);
+    background: rgba(34, 33, 55, 0.7);
     filter: blur(100px);
     z-index: 0;
 }
@@ -95,7 +99,7 @@
     top: 240px; /* Position the blur on top of the hero image */
     right: -25vw;
     border-radius: 764px;
-    background: rgba(233, 199, 243, 0.7);
+    background: rgba(27, 10, 88, 0.7);
     filter: blur(100px);
     z-index: 0;
 }
@@ -122,21 +126,21 @@
   }
   
   .socialIcons a {
-    color: #780876; /* Default dark pink color */
+    color: rgb(47, 255, 0); /* Default dark pink color */
     font-size: 24px;
     transition: color 0.3s;
   }
 
  .socialIcons a:hover {
-    color: #780876; /* LinkedIn color */
+    color: #f0f256; /* LinkedIn color */
   }
   
   .socialIcons a:nth-child(2):hover {
-    color: #780876; /* GitHub color */
+    color: #f0f256; /* GitHub color */
   }
   
   .socialIcons a:nth-child(3):hover {
-    color: #780876; /* Instagram color */
+    color: #f0f256; /* Instagram color */
   }
  
  

@@ -11,7 +11,6 @@ function App() {
     <div className={styles.App}>
       <MyNavbar />
       <Hero />
-      <AboutMe />
       <Experience />
       <AIBot />
     </div>

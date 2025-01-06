@@ -13,7 +13,7 @@ export const AboutMe = () => {
 
 
 
-          
+
             {/* <img src = {getImageUrl("about/aboutMe.jpg")} alt = "sitting on my laptop!" className = {styles.brightImage} /> */}
         {/* <ul className = {styles.aboutItems}>
           <li className = {styles.aboutItem}>

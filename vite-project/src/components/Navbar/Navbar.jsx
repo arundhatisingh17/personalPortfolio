@@ -27,7 +27,6 @@ export const MyNavbar = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mx-auto nav-links"> {/* Center links */}
-        <Nav.Link href="#about" className="nav-link"><h10 className='about-me'>About</h10></Nav.Link>
         <Nav.Link href="#experience" className="nav-link"><h10 className='Exp'>Experience</h10></Nav.Link>
         <Nav.Link href="#projects" className="nav-link"><h10 className='projs'>Projects</h10></Nav.Link>
         <Nav.Link href="#contact" className="nav-link"><h10 className='contact'>Contact</h10></Nav.Link>
